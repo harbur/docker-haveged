@@ -32,5 +32,5 @@ docker run --privileged -d harbur/haveged:1.7c-1
 
 In order to test the quality of entropy you can use rngtest
 ```
-docker run --privileged --entrypoint bash harbur/haveged:1.7c-1 -c 'cat /dev/random | rngtest -c 1000'
+docker run --rm --privileged --entrypoint bash harbur/haveged:1.7c-1 -c 'cat /dev/random | rngtest -c 1000'
 ```
